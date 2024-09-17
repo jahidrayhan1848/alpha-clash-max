@@ -13,19 +13,28 @@
 </head>
 <body>
    <main class="bg-[#010313] min-h-screen bg-[url(images/background.png)] bg-no-repeat bg-center">
-     <section class="home  hidden  ">
+     <section id="home-screen" class="home   ">
         <div class="flex flex-col justify-center items-center space-y-5  min-h-screen ">
             <h1 class="uppercase text-[#FFF] anton text-[140px]">alpha Clash pro</h1>
             <p class="text-[#FFF] poppins text-[20px] font-[500px]">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
            
-<button class="btn bg-white w-[175px] h-[53px]  poppins text-[24px]">Play Now</button>
+<button onclick="startGame()" class="btn bg-white w-[175px] h-[53px]  poppins text-[24px]">Play Now</button>
         </div>
 
     </section>
     <!-- playground section -->
-    <section class="play-ground  ">
-        <div class=" flex flex-col justify-center items-center border-red-600 p-7 space-y-6  ">
-            <div class="artboard artboard-horizontal phone-1 border-[20px] w-[1170px] h-[500px] border-[#010313CC] rounded-lg  bg-white"></div>
+    <section id="play-ground" class=" hidden">
+        <div class=" flex flex-col justify-center items-center border-red-600 p-7 space-y-6 ">
+            <div class="artboard artboard-horizontal phone-1 border-[20px] w-[1170px] h-[500px] border-[#010313CC] rounded-lg  bg-white">
+  
+<div class="bg-[#2F2941] w-3/4 ">
+  <p class=" text-center p-2 text-[#FFF]">Don't watch keyboard  while playing...</p> </div>
+
+       <div class="text-center justify-center items-center p-14">
+      <p id="random" class="text-8xl uppercase">Y</p>
+    </div>
+
+            </div>
            <div>
             <div class="my-1 flex w-full justify-center gap-1">
   <kbd class="kbd">q</kbd>
@@ -62,7 +71,7 @@
 </div>
            </div>
            <!-- button container -->
-           <div class="flex justify-between w-full">
+           <div class="flex justify-around w-full">
             <button class="btn rounded-3xl bg-[#894189] hover:bg-green-600 text-[20px] text-white ">
   Life
 <img src="images/Life.svg" alt="">
@@ -83,6 +92,8 @@
         
     </section>
    </main>
-    
+    <!-- js link  -->
+     <script src="js/utlity.js"></script>
+     <script src="js/key.js"></script>
 </body>
 </html>
